@@ -1,0 +1,74 @@
+{
+    "cv": {
+        "titles": {
+            "en": "Software Engineer, Mathematician, Rock Climber.",
+            "de": "Software Engineer, Mathematiker, Bergsteiger."
+        },
+        "links": {
+            "github": {
+                "en": "<a href=\"https://github.com/kaewik\">My Github Profile</a>",
+                "de": "<a href=\"https://github.com/kaewik\">Mein Github Profil</a>"
+            },
+            "xing": {
+                "en": "<a href=\"https://www.xing.com/profile/LukasJonathan_Zenner\">My XING Profile</a>",
+                "de": "<a href=\"https://www.xing.com/profile/LukasJonathan_Zenner\">Mein XING Profil</a>"
+            }
+        },
+        "experiences": {
+            "heading": {
+                "en": "Experiences",
+                "de": "Erfahrungen"
+            },
+            "content-reference": {
+                "en": "cv/experiences-en.html",
+                "de": "cv/experiences-de.html"
+            }
+        },
+        "tools": {
+            "heading": {
+                "en": "Favorite Tools",
+                "de": "Lieblings-Tools"
+            }
+        },
+        "education": {
+            "heading": {
+                "en": "Education",
+                "de": "Bildungsweg"
+            },
+            "content-reference": {
+                "en": "cv/education-en.html",
+                "de": "cv/education-de.html"
+            }
+        },
+        "occupation": {
+            "heading": {
+                "en": "Occupation",
+                "de": "Berufliche Laufbahn"
+            },
+            "content-reference": {
+                "en": "cv/occupation-en.html",
+                "de": "cv/occupation-de.html"
+            }
+        },
+        "hard-skills": {
+            "heading": {
+                "en": "Hard skills",
+                "de": "Fachliche Kompetenzen"
+            },
+            "content-reference": {
+                "en": "cv/hard-skills-en.html",
+                "de": "cv/hard-skills-de.html"
+            }
+        },
+        "soft-skills": {
+            "heading": {
+                "en": "Soft skills",
+                "de": "Sozialkompetenzen"
+            },
+            "content-reference": {
+                "en": "cv/soft-skills-en.html",
+                "de": "cv/soft-skills-de.html"
+            }
+        }
+    }
+}
