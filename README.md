@@ -63,3 +63,20 @@ Eliseo Papa ([Twitter](http://twitter.com/elipapa)/[Github](http://github.com/el
 ### License
 
 [MIT License](https://github.com/elipapa/markdown-cv/blob/master/LICENSE)
+
+
+TDOD:
+Verteiltes System -> verteiltes System
+Erfahrungen: line breaks
+kubernetes not with fargate
+plattform?
+Amazon Web Services
+Beruflische!!!!
+remove   current
+bindestriche statt spaces
+Studierende
+Teamwork
+Landesrechenzentrum Steuern Sachsen
+margin bottom
+Foto
+names of months

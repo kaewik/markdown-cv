@@ -1,3 +1,4 @@
+{% assign translations = site.data.translations %}
 <!doctype html>
 <html>
 <head>
@@ -8,8 +9,61 @@
 </head>
 <body>
   <div id="main">
+    <div id="language-switch">
+      {% if page.lang == 'en' %}
+      <a href="index-de.html">
+        <button class="german-flag"></button>
+      </a>
+      {% else %}
+      <a href="index.html">
+        <button class="british-flag"></button>
+      </a>
+      {% endif %}
+    </div>
     <div id="content">
-    {{ content }}
+      <div id="header-row">
+        <div style="text-align: right;">
+          <img src="media/photo2.jpeg" id="photo" />
+        </div>
+        <div></div>
+        <div id="header">
+          <h1>Lukas Jonathan Zenner</h1>
+          <p>{{ translations.cv.titles[page.lang] }}</p>
+
+          <div id="webaddress">
+          {{ translations.cv.links.github[page.lang] }} | {{ translations.cv.links.xing[page.lang] }}
+          </div>
+        </div>
+      </div>
+
+      <h2>{{ translations.cv.experiences.heading[page.lang] }}</h2>
+
+      {% assign experiences-reference = translations.cv.experiences.content-reference[page.lang] %}
+      <p>{% include {{ experiences-reference }} %}</p>
+
+      <h2>{{ translations.cv.tools.heading[page.lang] }}</h2>
+
+      <p>neovim &mdash; nix &mdash; zsh &mdash; git</p>
+
+      <h2>{{ translations.cv.education.heading[page.lang] }}</h2>
+
+      {% assign education-reference = translations.cv.education.content-reference[page.lang] %}
+      <p>{% include {{ education-reference }} %}</p>
+
+      <h2>{{ translations.cv.occupation.heading[page.lang] }}</h2>
+
+      {% assign occupation-reference = translations.cv.occupation.content-reference[page.lang] %}
+      <p>{% include {{ occupation-reference }} %}</p>
+
+      <h2>{{ translations.cv.hard-skills.heading[page.lang] }}</h2>
+
+      {% assign hard-skills-reference = translations.cv.hard-skills.content-reference[page.lang] %}
+      <p>{% include {{ hard-skills-reference }} %}</p>
+
+      <h2>{{ translations.cv.soft-skills.heading[page.lang] }}</h2>
+
+      {% assign soft-skills-reference = translations.cv.soft-skills.content-reference[page.lang] %}
+      <p>{% include {{ soft-skills-reference }} %}</p>
     </div>
   </div>
 </body>

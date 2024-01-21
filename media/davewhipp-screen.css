@@ -92,12 +92,11 @@ ul {
 	margin-top: -0.5em;
 }
 
-/*uncomment to get dashes in the list*/
-/*li:before {
+li:before {
 	content: "-";
 	position: relative;
 	left: -0.25em;
-}*/
+}
 
 li {
 	/*second line indent*/
@@ -164,7 +163,6 @@ a:hover {
 #webaddress {
 	margin-top: 1em;
 	position: relative;
-	left: 25%;
 	color: #bc412b;
 	font-family: Monaco,Menlo,monospace,sans-serif;
 	font-size: 100%;
@@ -172,6 +170,47 @@ a:hover {
 
 #webaddress a {
 	text-decoration: none;
+}
+
+#language-switch {
+	margin-top: 1em;
+	position: relative;
+	font-size: 100%;
+}
+
+.german-flag {
+	background-image: url('german_flag.jpeg');
+	background-size: cover; /* scales the image */
+	width: 30px;  /* adjust as needed */
+	height: 20px;  /* adjust as needed */
+	border: none;
+	cursor: pointer;
+}
+
+.british-flag {
+	background-image: url('british_flag.jpeg');
+	background-size: cover; /* scales the image */
+	width: 30px;  /* adjust as needed */
+	height: 20px;  /* adjust as needed */
+	border: none;
+	cursor: pointer;
+}
+
+#photo {
+	object-fit: cover;
+	object-position: top;
+	width: 112px;
+	height: 112px;
+}
+
+#header-row {
+	display: grid;
+	grid-template-columns: 20% 5% auto;
+}
+
+#header h1, #header p {
+	width: 100%;
+	left: 0;
 }
 
 em {
