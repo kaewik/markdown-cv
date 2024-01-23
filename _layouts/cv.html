@@ -39,7 +39,7 @@
       <h2>{{ translations.cv.experiences.heading[page.lang] }}</h2>
 
       {% assign experiences-reference = translations.cv.experiences.content-reference[page.lang] %}
-      <p>{% include {{ experiences-reference }} %}</p>
+      {% include {{ experiences-reference }} %}
 
       <h2>{{ translations.cv.tools.heading[page.lang] }}</h2>
 

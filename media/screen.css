@@ -55,10 +55,10 @@ body {
 	font: normal normal 400;
 	font-size: 100%;
 	line-height: 1.5em;
-	/*also written as...  font: normal normal 400 100%/1.5em;*/
 	font-family: Avenir,Verdana,sans-serif;
 	margin-top: 1em;
 	margin-left: 1em;
+	padding-bottom: 5em;
 }
 
 p {
@@ -99,10 +99,8 @@ li:before {
 }
 
 li {
-	/*second line indent*/
 	padding-left: 1.25em;
-	text-indent: -1.25em;
-	/*color: #777;*/
+	text-indent: -1em;
 }
 
 li ul {
