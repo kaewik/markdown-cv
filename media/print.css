@@ -169,6 +169,7 @@ a:hover {
 	object-position: top;
 	width: 90px;
 	height: 90px;
+	border-radius: 5px;
 }
 
 #header-row {
