@@ -4,8 +4,8 @@
 <head>
   <meta charset=utf-8 />
   <title> {% if page.title %} {{ page.title }} | {% endif %} CV</title>
-  <link href="media/{{ site.style }}-screen.css" type="text/css" rel="stylesheet" media="screen">
-  <link href="media/{{ site.style }}-print.css" type="text/css" rel="stylesheet" media="print">
+  <link href="media/screen.css" type="text/css" rel="stylesheet" media="screen">
+  <link href="media/print.css" type="text/css" rel="stylesheet" media="print">
 </head>
 <body>
   <div id="main">
@@ -39,7 +39,7 @@
       <h2>{{ translations.cv.experiences.heading[page.lang] }}</h2>
 
       {% assign experiences-reference = translations.cv.experiences.content-reference[page.lang] %}
-      <p>{% include {{ experiences-reference }} %}</p>
+      {% include {{ experiences-reference }} %}
 
       <h2>{{ translations.cv.tools.heading[page.lang] }}</h2>
 

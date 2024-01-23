@@ -42,19 +42,12 @@ Any change you want to make to your CV from then on would have to be done on the
 
 ## Styling
 
-The included CSS will render your CV in two styles:
-s
-1. `kjhealy` the original default, inspired by [kjhealy's vita
-template](https://github.com/kjhealy/kjh-vita).
-2. `davewhipp` is a tweaked version of `kjhealy`, with bigger fonts and dates
-  right aligned.
-
 To change the default style, simply change the variable in the
 `_config.yml` file.
 
 Any other styling is possible. More CSS style contributions and forks are welcome!
 
-### Author
+### Credits to the Author
 
 Eliseo Papa ([Twitter](http://twitter.com/elipapa)/[Github](http://github.com/elipapa)/[Website](https://elipapa.github.io)).
 
@@ -64,19 +57,3 @@ Eliseo Papa ([Twitter](http://twitter.com/elipapa)/[Github](http://github.com/el
 
 [MIT License](https://github.com/elipapa/markdown-cv/blob/master/LICENSE)
 
-
-TDOD:
-Verteiltes System -> verteiltes System
-Erfahrungen: line breaks
-kubernetes not with fargate
-plattform?
-Amazon Web Services
-Beruflische!!!!
-remove   current
-bindestriche statt spaces
-Studierende
-Teamwork
-Landesrechenzentrum Steuern Sachsen
-margin bottom
-Foto
-names of months
