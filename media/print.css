@@ -1,6 +1,6 @@
 body {
 	font: normal normal 400;
-	font-size: 9pt;
+	font-size: 12pt;
 	line-height: 1.5em;
 	font-family: Avenir,Verdana,sans-serif;
 	margin: 1em;
@@ -17,6 +17,7 @@ code {
 h1,h2,h3,h4 {
 	font-weight: 400;
 	font-family: Avenir,Cousine,Verdana,sans-serif;
+	page-break-after: avoid;
 }
 
 h1 {
@@ -32,7 +33,7 @@ h1+p {
 }
 
 h2 {
-	font-size: 1.1em;
+	font-size: 1.4em;
 	color: #bc412b;
 	text-align: left;
 }
@@ -40,7 +41,7 @@ h2 {
 h3 {
 	font-size: 1em;
 	line-height: 2em;
-	text-align: right;
+	text-align: left;
 }
 
 a {
@@ -76,7 +77,32 @@ strong {
 	display: none;
 }
 
-/*
-@media only screen and (max-width: 480px) {
-	make one column somehow...
-}*/
+.container {
+	position: relative;
+}
+
+.centerRight {
+	max-height: 100%;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.print-head-grid {
+	display: grid;
+	grid-template-columns: 10% 3% auto;
+}
+
+.print-education-grid {
+	display: grid;
+	grid-template-columns: 76% 3% auto;
+}
+
+.print-occupation-grid {
+	display: grid;
+	grid-template-columns: 76% 3% auto;
+}

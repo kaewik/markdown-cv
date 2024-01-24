@@ -5,97 +5,95 @@
   <meta charset=utf-8 />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title> {% if page.title %} {{ page.title }} | {% endif %} CV</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
-  <link href="media/screen.css" type="text/css" rel="stylesheet" media="screen">
-  <link href="media/print.css" type="text/css" rel="stylesheet" media="print">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" media="screen" />
+  <link href="media/sm-screen.css" type="text/css" rel="stylesheet" media="screen and (min-width: 35.5em)" />
+  <link href="media/lg-screen.css" type="text/css" rel="stylesheet" media="screen and (min-width: 64em)" />
+  <link href="media/xxl-screen.css" type="text/css" rel="stylesheet" media="screen and (min-width: 120em)" />
+  <link href="media/print.css" type="text/css" rel="stylesheet" media="print" />
 </head>
 <body>
-  <div>
-    <div id="language-switch">
-      {% if page.lang == 'en' %}
-      <a href="index-de.html">
-        <button class="german-flag"></button>
-      </a>
-      {% else %}
-      <a href="index.html">
-        <button class="british-flag"></button>
-      </a>
-      {% endif %}
+  <div id="language-switch">
+    {% if page.lang == 'en' %}
+    <a href="index-de.html">
+      <button class="german-flag"></button>
+    </a>
+    {% else %}
+    <a href="index.html">
+      <button class="british-flag"></button>
+    </a>
+    {% endif %}
+  </div>
+  <div class="pure-g print-head-grid">
+    <div class="pure-u-5-24 container">
+      <img src="media/photo2.jpeg" id="photo" class="pure-img centerRight"/>
     </div>
-    <div>
-      <div class="pure-g">
-        <div class="pure-u-5-24" style="text-align: right;">
-          <img src="media/photo2.jpeg" id="photo" class="pure-img" style="display: inline-block" />
-        </div>
-        <div class="pure-u-1-24"></div>
-        <div class="pure-u-18-24">
-          <h1>Lukas Jonathan Zenner</h1>
-          <p>{{ translations.cv.titles[page.lang] }}</p>
-          <div id="webaddress">
-            {{ translations.cv.links.github[page.lang] }} | {{ translations.cv.links.xing[page.lang] }}
-          </div>
-        </div>
+    <div class="pure-u-1-24"></div>
+    <div class="pure-u-18-24">
+      <h1>Lukas Jonathan Zenner</h1>
+      <p>{{ translations.cv.titles[page.lang] }}</p>
+      <div id="webaddress">
+        {{ translations.cv.links.github[page.lang] }} | {{ translations.cv.links.xing[page.lang] }}
       </div>
-
-      <div class="pure-g">
-        <div class="pure-u-5-24">
-          <h2>{{ translations.cv.experiences.heading[page.lang] }}</h2>
-        </div>
-        <div class="pure-u-1-24"></div>
-        <div class="pure-u-18-24">
-          {% assign experiences-reference = translations.cv.experiences.content-reference[page.lang] %}
-          {% include {{ experiences-reference }} %}
-        </div>
-      </div>
-      <div class="pure-g">
-        <div class="pure-u-5-24">
-          <h2>{{ translations.cv.tools.heading[page.lang] }}</h2>
-        </div>
-        <div class="pure-u-1-24"></div>
-        <div class="pure-u-18-24">
-          <p>neovim &mdash; nix &mdash; zsh &mdash; git</p>
-        </div>
-      </div>
-      <div class="pure-g">
-        <div class="pure-u-5-24">
-          <h2>{{ translations.cv.education.heading[page.lang] }}</h2>
-        </div>
-        <div class="pure-u-1-24"></div>
-        <div class="pure-u-18-24">
-          {% assign education-reference = translations.cv.education.content-reference[page.lang] %}
-          {% include {{ education-reference }} %}
-        </div>
-      </div>
-      <div class="pure-g">
-        <div class="pure-u-5-24">
-          <h2>{{ translations.cv.occupation.heading[page.lang] }}</h2>
-        </div>
-        <div class="pure-u-1-24"></div>
-        <div class="pure-u-18-24">
-          {% assign occupation-reference = translations.cv.occupation.content-reference[page.lang] %}
-          {% include {{ occupation-reference }} %}
-        </div>
-      </div>
-      <div class="pure-g">
-        <div class="pure-u-5-24">
-          <h2>{{ translations.cv.hard-skills.heading[page.lang] }}</h2>
-        </div>
-        <div class="pure-u-1-24"></div>
-        <div class="pure-u-18-24">
-          {% assign hard-skills-reference = translations.cv.hard-skills.content-reference[page.lang] %}
-          <p>{% include {{ hard-skills-reference }} %}</p>
-        </div>
-      </div>
-      <div class="pure-g">
-        <div class="pure-u-5-24">
-          <h2>{{ translations.cv.soft-skills.heading[page.lang] }}</h2>
-        </div>
-        <div class="pure-u-1-24"></div>
-        <div class="pure-u-18-24">
-          {% assign soft-skills-reference = translations.cv.soft-skills.content-reference[page.lang] %}
-          <p>{% include {{ soft-skills-reference }} %}</p>
-        </div>
-      </div>
+    </div>
+  </div>
+  <div class="pure-g">
+    <div class="pure-u-lg-5-24 pure-u-sm-1">
+      <h2>{{ translations.cv.experiences.heading[page.lang] }}</h2>
+    </div>
+    <div class="pure-u-lg-1-24 pure-u-sm-1"></div>
+    <div class="pure-u-lg-18-24 pure-u-sm-1">
+      {% assign experiences-reference = translations.cv.experiences.content-reference[page.lang] %}
+      {% include {{ experiences-reference }} %}
+    </div>
+  </div>
+  <div class="pure-g">
+    <div class="pure-u-lg-5-24 pure-u-sm-1">
+      <h2>{{ translations.cv.tools.heading[page.lang] }}</h2>
+    </div>
+    <div class="pure-u-lg-1-24 pure-u-sm-1"></div>
+    <div class="pure-u-lg-18-24 pure-u-sm-1">
+      <p>neovim &mdash; nix &mdash; zsh &mdash; git</p>
+    </div>
+  </div>
+  <div class="pure-g">
+    <div class="pure-u-lg-5-24 pure-u-sm-1">
+      <h2>{{ translations.cv.education.heading[page.lang] }}</h2>
+    </div>
+    <div class="pure-u-lg-1-24 pure-u-sm-1"></div>
+    <div class="pure-u-lg-18-24 pure-u-sm-1">
+      {% assign education-reference = translations.cv.education.content-reference[page.lang] %}
+      {% include {{ education-reference }} %}
+    </div>
+  </div>
+  <div class="pure-g">
+    <div class="pure-u-lg-5-24 pure-u-sm-1">
+      <h2>{{ translations.cv.occupation.heading[page.lang] }}</h2>
+    </div>
+    <div class="pure-u-lg-1-24 pure-u-sm-1"></div>
+    <div class="pure-u-lg-18-24 pure-u-sm-1">
+      {% assign occupation-reference = translations.cv.occupation.content-reference[page.lang] %}
+      {% include {{ occupation-reference }} %}
+    </div>
+  </div>
+  <div class="pure-g">
+    <div class="pure-u-lg-5-24 pure-u-sm-1">
+      <h2>{{ translations.cv.hard-skills.heading[page.lang] }}</h2>
+    </div>
+    <div class="pure-u-lg-1-24 pure-u-sm-1"></div>
+    <div class="pure-u-lg-18-24 pure-u-sm-1">
+      {% assign hard-skills-reference = translations.cv.hard-skills.content-reference[page.lang] %}
+      <p>{% include {{ hard-skills-reference }} %}</p>
+    </div>
+  </div>
+  <div class="pure-g">
+    <div class="pure-u-lg-5-24 pure-u-sm-1">
+      <h2>{{ translations.cv.soft-skills.heading[page.lang] }}</h2>
+    </div>
+    <div class="pure-u-lg-1-24 pure-u-sm-1"></div>
+    <div class="pure-u-lg-18-24 pure-u-sm-1">
+      {% assign soft-skills-reference = translations.cv.soft-skills.content-reference[page.lang] %}
+      <p>{% include {{ soft-skills-reference }} %}</p>
     </div>
   </div>
 </body>
