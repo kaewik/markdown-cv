@@ -12,6 +12,10 @@
             "xing": {
                 "en": "<a href=\"https://www.xing.com/profile/LukasJonathan_Zenner\">My XING Profile</a>",
                 "de": "<a href=\"https://www.xing.com/profile/LukasJonathan_Zenner\">Mein XING Profil</a>"
+            },
+            "linkedin": {
+                "en": "<a href=\"https://www.linkedin.com/in/lukas-jonathan-zenner-b5a9942b1\">My LinkedIn Profile</a>",
+                "de": "<a href=\"https://www.linkedin.com/in/lukas-jonathan-zenner-b5a9942b1\">Mein LinkedIn Profil</a>"
             }
         },
         "experiences": {
