@@ -24,6 +24,16 @@
                 "de": "cv/experiences-de.html"
             }
         },
+        "goals": {
+            "heading": {
+                "en": "Incentive",
+                "de": "Ansporn"
+            },
+            "content-reference": {
+                "en": "cv/goals-en.html",
+                "de": "cv/goals-de.html"
+            }
+        },
         "tools": {
             "heading": {
                 "en": "Favorite Tools",
